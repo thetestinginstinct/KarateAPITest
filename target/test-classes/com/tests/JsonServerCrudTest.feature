@@ -3,12 +3,14 @@ Feature: Json server crud test
   Background: api end point url
     * url 'http://localhost:3000/posts'
 
-  @ignore
   Scenario: create a new post
     #Given url 'http://localhost:3000/posts'
     Given request {"title": "json-server","author": "typicode"}
     When method post
     Then status 201
+    * match $ == {title: "json-server",author: "typicode",id: #notnull}
+    * match response == {"title": "json-server","author": "typicode","id": #ignore}
+    * match response $ == {"title": "json-server","author": "typicode","id": #notnull}
 
   Scenario: get created post details
     # Hitting post request
@@ -28,6 +30,7 @@ Feature: Json server crud test
     Then status 200
     # Printing response of get request
     And print 'response is:', response
+    * match $ == {title: "json-server",author: "typicode",id: #notnull}
 
   Scenario: update created post details
     # Hitting post request
@@ -49,6 +52,7 @@ Feature: Json server crud test
     Then status 200
     # Printing response of put request
     And print 'response is:', response
+    * match $ == {title: "json-server new",author: "typicode new",id: #notnull}
 
   Scenario: partial update of created post details
     # Hitting post request
@@ -70,6 +74,7 @@ Feature: Json server crud test
     Then status 200
     # Printing response of patch request
     And print 'response is:', response
+    * match $ == {title: "json-server new",author: "typicode",id: #notnull}
 
   Scenario: deleting created post details
     # Hitting post request

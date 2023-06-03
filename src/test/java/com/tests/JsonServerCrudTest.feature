@@ -8,9 +8,10 @@ Feature: Json server crud test
     Given request {"title": "json-server","author": "typicode"}
     When method post
     Then status 201
-    * match $ == {title: "json-server",author: "typicode",id: #notnull}
-    * match response == {"title": "json-server","author": "typicode","id": #ignore}
-    * match response $ == {"title": "json-server","author": "typicode","id": #notnull}
+    Then match $ == {title: "json-server",author: "typicode",id: #notnull}
+    Then match response == {"title": "json-server","author": "typicode","id": #ignore}
+    Then match response $ == {"title": "json-server","author": "typicode","id": #notnull}
+    Then assert responseTime < 100
 
   Scenario: get created post details
     # Hitting post request
@@ -30,7 +31,8 @@ Feature: Json server crud test
     Then status 200
     # Printing response of get request
     And print 'response is:', response
-    * match $ == {title: "json-server",author: "typicode",id: #notnull}
+    Then match $ == {title: "json-server",author: "typicode",id: #notnull}
+    Then assert responseTime < 3000
 
   Scenario: update created post details
     # Hitting post request
@@ -52,7 +54,8 @@ Feature: Json server crud test
     Then status 200
     # Printing response of put request
     And print 'response is:', response
-    * match $ == {title: "json-server new",author: "typicode new",id: #notnull}
+    Then match $ == {title: "json-server new",author: "typicode new",id: #notnull}
+    Then assert responseTime < 3000
 
   Scenario: partial update of created post details
     # Hitting post request
@@ -74,7 +77,8 @@ Feature: Json server crud test
     Then status 200
     # Printing response of patch request
     And print 'response is:', response
-    * match $ == {title: "json-server new",author: "typicode",id: #notnull}
+    Then match $ == {title: "json-server new",author: "typicode",id: #notnull}
+    Then assert responseTime < 3000
 
   Scenario: deleting created post details
     # Hitting post request
@@ -95,3 +99,4 @@ Feature: Json server crud test
     Then status 200
     # Printing response of delete request
     And print 'response is:', response
+    Then assert responseTime < 3000

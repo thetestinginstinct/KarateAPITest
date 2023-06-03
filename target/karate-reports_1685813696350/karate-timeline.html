@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/com\/tests\/JsonServerCrudTest[1:6]","start":1676227307091,"end":1676227311269,"title":"src\/test\/java\/com\/tests\/JsonServerCrudTest[1:6] 00:11:47.091-00:11:51.269 create a new post","className":"failed"},{"id":2,"group":1,"content":"src\/test\/java\/com\/tests\/JsonServerCrudTest[2:16]","start":1676227311285,"end":1676227315686,"title":"src\/test\/java\/com\/tests\/JsonServerCrudTest[2:16] 00:11:51.285-00:11:55.686 get created post details"},{"id":3,"group":1,"content":"src\/test\/java\/com\/tests\/JsonServerCrudTest[3:37]","start":1676227315705,"end":1676227319877,"title":"src\/test\/java\/com\/tests\/JsonServerCrudTest[3:37] 00:11:55.705-00:11:59.877 update created post details"},{"id":4,"group":1,"content":"src\/test\/java\/com\/tests\/JsonServerCrudTest[4:60]","start":1676227319895,"end":1676227324075,"title":"src\/test\/java\/com\/tests\/JsonServerCrudTest[4:60] 00:11:59.895-00:12:04.075 partial update of created post details"},{"id":5,"group":1,"content":"src\/test\/java\/com\/tests\/JsonServerCrudTest[5:83]","start":1676227324094,"end":1676227328268,"title":"src\/test\/java\/com\/tests\/JsonServerCrudTest[5:83] 00:12:04.094-00:12:08.268 deleting created post details"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

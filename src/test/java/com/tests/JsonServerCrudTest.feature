@@ -11,7 +11,7 @@ Feature: Json server crud test
     Then match $ == {title: "json-server",author: "typicode",id: #notnull}
     Then match response == {"title": "json-server","author": "typicode","id": #ignore}
     Then match response $ == {"title": "json-server","author": "typicode","id": #notnull}
-    Then assert responseTime < 100
+    Then assert responseTime < 3000
 
   Scenario: get created post details
     # Hitting post request

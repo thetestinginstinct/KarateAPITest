@@ -39,8 +39,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">5</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -50,12 +50,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-07-06 10:49:08 am</div>
+    <div>2023-06-03 11:05:18 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:6]"><span>[1:6]</span> <span>create a new post</span></a>
           </div>
           <div class="nav-item passed">
@@ -93,8 +93,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3642</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3307</span>
             </div>
           </div>
           <div class="step-row">
@@ -117,7 +117,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>url &#39;http://localhost:3000/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">126</div>
+    <div class="time-cell passed">131</div>
   </div>
 
    
@@ -152,7 +152,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">81</div>
+    <div class="time-cell passed">76</div>
   </div>
 
    
@@ -180,7 +180,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3324</div>
+    <div class="time-cell passed">3008</div>
   </div>
 
    
@@ -189,7 +189,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.9">10:48:48.982 request:
+  <div class="preformatted" data-parent="0.9">23:04:58.996 request:
 1 &gt; POST http://localhost:3000/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -199,7 +199,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:48:51.286 response time in milliseconds: 2298
+23:05:01.198 response time in milliseconds: 2197
 1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
@@ -208,18 +208,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://localhost:3000/posts/6
+1 &lt; Location: http://localhost:3000/posts/2
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 63
-1 &lt; ETag: W/&quot;3f-Ng9tpIS6dG3e4u3r5hr0E1RmBew&quot;
-1 &lt; Date: Thu, 06 Jul 2023 05:18:51 GMT
+1 &lt; ETag: W/&quot;3f-88IujUh1ViBIzsuPwxj+mS0+H+Q&quot;
+1 &lt; Date: Sat, 03 Jun 2023 17:35:01 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 6
+  &quot;id&quot;: 2
 }
 
 </div>   
@@ -269,7 +269,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>match $ == {title: &quot;json-server&quot;,author: &quot;typicode&quot;,id: #notnull}</span>
       </div>
     </div>
-    <div class="time-cell passed">77</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
@@ -347,13 +347,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+      <div class="step-ref failed">14</div>
       
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>assert responseTime &lt; 3000</span>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>assert responseTime &lt; 100</span>
       </div>
     </div>
-    <div class="time-cell passed">31</div>
+    <div class="time-cell failed">22</div>
   </div>
 
    
@@ -362,7 +362,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.14">23:05:01.299 src/test/java/com/tests/JsonServerCrudTest.feature:14
+Then assert responseTime &lt; 100
+did not evaluate to &#39;true&#39;: responseTime &lt; 100
+src/test/java/com/tests/JsonServerCrudTest.feature:14
+</div>   
 
   
 
@@ -382,7 +386,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>4429</span>
+              <span>ms:</span>&nbsp;<span>4338</span>
             </div>
           </div>
           <div class="step-row">
@@ -449,7 +453,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -477,7 +481,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2148</div>
+    <div class="time-cell passed">2092</div>
   </div>
 
    
@@ -486,7 +490,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">10:48:51.434 request:
+  <div class="preformatted" data-parent="0.20">23:05:01.317 request:
 1 &gt; POST http://localhost:3000/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -496,7 +500,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:48:53.566 response time in milliseconds: 2130
+23:05:03.403 response time in milliseconds: 2084
 1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
@@ -505,18 +509,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://localhost:3000/posts/7
+1 &lt; Location: http://localhost:3000/posts/3
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 63
-1 &lt; ETag: W/&quot;3f-Qy+5F7WZa3bS1u0WDFpcz9ZwDPM&quot;
-1 &lt; Date: Thu, 06 Jul 2023 05:18:53 GMT
+1 &lt; ETag: W/&quot;3f-/qtlR2LBkLkNAy1m/AXOxFA2P80&quot;
+1 &lt; Date: Sat, 03 Jun 2023 17:35:03 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 7
+  &quot;id&quot;: 3
 }
 
 </div>   
@@ -573,7 +577,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">132</div>
+    <div class="time-cell passed">128</div>
   </div>
 
    
@@ -582,10 +586,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.23">10:48:53.712 [print] response is: {
+  <div class="preformatted" data-parent="0.23">23:05:03.531 [print] response is: {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 7
+  &quot;id&quot;: 3
 }
  
 </div>   
@@ -614,7 +618,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>def postId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -712,7 +716,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">2137</div>
+    <div class="time-cell passed">2106</div>
   </div>
 
    
@@ -721,15 +725,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.30">10:48:53.722 request:
-2 &gt; GET http://localhost:3000/posts/7
+  <div class="preformatted" data-parent="0.30">23:05:03.543 request:
+2 &gt; GET http://localhost:3000/posts/3
 2 &gt; Host: localhost:3000
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-10:48:55.853 response time in milliseconds: 2130
+23:05:05.645 response time in milliseconds: 2101
 2 &lt; 200
 2 &lt; X-Powered-By: Express
 2 &lt; Vary: Origin, Accept-Encoding
@@ -740,14 +744,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 63
-2 &lt; ETag: W/&quot;3f-Qy+5F7WZa3bS1u0WDFpcz9ZwDPM&quot;
-2 &lt; Date: Thu, 06 Jul 2023 05:18:55 GMT
+2 &lt; ETag: W/&quot;3f-/qtlR2LBkLkNAy1m/AXOxFA2P80&quot;
+2 &lt; Date: Sat, 03 Jun 2023 17:35:05 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 7
+  &quot;id&quot;: 3
 }
 
 </div>   
@@ -813,10 +817,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">10:48:55.859 [print] response is: {
+  <div class="preformatted" data-parent="0.33">23:05:05.648 [print] response is: {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 7
+  &quot;id&quot;: 3
 }
  
 </div>   
@@ -838,7 +842,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>match $ == {title: &quot;json-server&quot;,author: &quot;typicode&quot;,id: #notnull}</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -895,7 +899,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>4246</span>
+              <span>ms:</span>&nbsp;<span>4142</span>
             </div>
           </div>
           <div class="step-row">
@@ -962,7 +966,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -990,7 +994,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2111</div>
+    <div class="time-cell passed">2044</div>
   </div>
 
    
@@ -999,7 +1003,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.41">10:48:55.887 request:
+  <div class="preformatted" data-parent="0.41">23:05:05.670 request:
 1 &gt; POST http://localhost:3000/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -1009,7 +1013,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:48:57.991 response time in milliseconds: 2102
+23:05:07.710 response time in milliseconds: 2040
 1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
@@ -1018,18 +1022,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://localhost:3000/posts/8
+1 &lt; Location: http://localhost:3000/posts/4
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 63
-1 &lt; ETag: W/&quot;3f-xokFSXWg8Qjab8IFeYAADVR6Ng0&quot;
-1 &lt; Date: Thu, 06 Jul 2023 05:18:57 GMT
+1 &lt; ETag: W/&quot;3f-4i9T+OQY5tgodRLbDb5J9ROjUI0&quot;
+1 &lt; Date: Sat, 03 Jun 2023 17:35:07 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 8
+  &quot;id&quot;: 4
 }
 
 </div>   
@@ -1086,7 +1090,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1095,10 +1099,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.44">10:48:57.997 [print] response is: {
+  <div class="preformatted" data-parent="0.44">23:05:07.714 [print] response is: {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 8
+  &quot;id&quot;: 4
 }
  
 </div>   
@@ -1127,7 +1131,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>def postId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1162,7 +1166,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1197,7 +1201,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path postId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1260,7 +1264,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">2124</div>
+    <div class="time-cell passed">2086</div>
   </div>
 
    
@@ -1269,8 +1273,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.53">10:48:58.007 request:
-2 &gt; PUT http://localhost:3000/posts/8
+  <div class="preformatted" data-parent="0.53">23:05:07.721 request:
+2 &gt; PUT http://localhost:3000/posts/4
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Content-Length: 51
 2 &gt; Host: localhost:3000
@@ -1279,7 +1283,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server new&quot;,&quot;author&quot;:&quot;typicode new&quot;}
 
-10:49:00.125 response time in milliseconds: 2098
+23:05:09.802 response time in milliseconds: 2081
 2 &lt; 200
 2 &lt; X-Powered-By: Express
 2 &lt; Vary: Origin, Accept-Encoding
@@ -1290,14 +1294,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 71
-2 &lt; ETag: W/&quot;47-wQlGH6Lc5XhzIFcDFqbB++rbxLU&quot;
-2 &lt; Date: Thu, 06 Jul 2023 05:19:00 GMT
+2 &lt; ETag: W/&quot;47-Gd1SGcIXu3Aex3LiPabOc33aXSs&quot;
+2 &lt; Date: Sat, 03 Jun 2023 17:35:09 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server new&quot;,
   &quot;author&quot;: &quot;typicode new&quot;,
-  &quot;id&quot;: 8
+  &quot;id&quot;: 4
 }
 
 </div>   
@@ -1354,7 +1358,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1363,10 +1367,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.56">10:49:00.129 [print] response is: {
+  <div class="preformatted" data-parent="0.56">23:05:09.805 [print] response is: {
   &quot;title&quot;: &quot;json-server new&quot;,
   &quot;author&quot;: &quot;typicode new&quot;,
-  &quot;id&quot;: 8
+  &quot;id&quot;: 4
 }
  
 </div>   
@@ -1388,7 +1392,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>match $ == {title: &quot;json-server new&quot;,author: &quot;typicode new&quot;,id: #notnull}</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -1445,7 +1449,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>4315</span>
+              <span>ms:</span>&nbsp;<span>4174</span>
             </div>
           </div>
           <div class="step-row">
@@ -1512,7 +1516,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1540,7 +1544,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2101</div>
+    <div class="time-cell passed">2080</div>
   </div>
 
    
@@ -1549,7 +1553,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.64">10:49:00.149 request:
+  <div class="preformatted" data-parent="0.64">23:05:09.822 request:
 1 &gt; POST http://localhost:3000/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -1559,7 +1563,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:49:02.236 response time in milliseconds: 2081
+23:05:11.898 response time in milliseconds: 2075
 1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
@@ -1568,18 +1572,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://localhost:3000/posts/9
+1 &lt; Location: http://localhost:3000/posts/5
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 63
-1 &lt; ETag: W/&quot;3f-BHyQR3QGfMT5+ABTkJncI3b+LNc&quot;
-1 &lt; Date: Thu, 06 Jul 2023 05:19:02 GMT
+1 &lt; ETag: W/&quot;3f-Xu0IkH7Q4HQSY1VVm8GxXkRM9UI&quot;
+1 &lt; Date: Sat, 03 Jun 2023 17:35:11 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 9
+  &quot;id&quot;: 5
 }
 
 </div>   
@@ -1636,7 +1640,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1645,10 +1649,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.67">10:49:02.254 [print] response is: {
+  <div class="preformatted" data-parent="0.67">23:05:11.900 [print] response is: {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 9
+  &quot;id&quot;: 5
 }
  
 </div>   
@@ -1677,7 +1681,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>def postId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1712,7 +1716,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/posts&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1747,7 +1751,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path postId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1782,7 +1786,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server new&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1810,7 +1814,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method patch</span>
       </div>
     </div>
-    <div class="time-cell passed">2190</div>
+    <div class="time-cell passed">2084</div>
   </div>
 
    
@@ -1819,8 +1823,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.76">10:49:02.274 request:
-2 &gt; PATCH http://localhost:3000/posts/9
+  <div class="preformatted" data-parent="0.76">23:05:11.906 request:
+2 &gt; PATCH http://localhost:3000/posts/5
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Content-Length: 47
 2 &gt; Host: localhost:3000
@@ -1829,7 +1833,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server new&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:49:04.456 response time in milliseconds: 2171
+23:05:13.983 response time in milliseconds: 2076
 2 &lt; 200
 2 &lt; X-Powered-By: Express
 2 &lt; Vary: Origin, Accept-Encoding
@@ -1840,14 +1844,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 67
-2 &lt; ETag: W/&quot;43-ve+I6h6qAWiKlydIBo8Qd/C3FMU&quot;
-2 &lt; Date: Thu, 06 Jul 2023 05:19:04 GMT
+2 &lt; ETag: W/&quot;43-ZBRyHEgQ3Xp4cZJ5AKQlSWhxrm4&quot;
+2 &lt; Date: Sat, 03 Jun 2023 17:35:13 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server new&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 9
+  &quot;id&quot;: 5
 }
 
 </div>   
@@ -1904,7 +1908,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1913,10 +1917,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.79">10:49:04.467 [print] response is: {
+  <div class="preformatted" data-parent="0.79">23:05:13.990 [print] response is: {
   &quot;title&quot;: &quot;json-server new&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 9
+  &quot;id&quot;: 5
 }
  
 </div>   
@@ -1938,7 +1942,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>match $ == {title: &quot;json-server new&quot;,author: &quot;typicode&quot;,id: #notnull}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1966,7 +1970,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1995,7 +1999,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>4219</span>
+              <span>ms:</span>&nbsp;<span>4166</span>
             </div>
           </div>
           <div class="step-row">
@@ -2062,7 +2066,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>request {&quot;title&quot;: &quot;json-server&quot;,&quot;author&quot;: &quot;typicode&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2090,7 +2094,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">2110</div>
+    <div class="time-cell passed">2075</div>
   </div>
 
    
@@ -2099,7 +2103,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.87">10:49:04.483 request:
+  <div class="preformatted" data-parent="0.87">23:05:14.021 request:
 1 &gt; POST http://localhost:3000/posts
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 43
@@ -2109,7 +2113,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;title&quot;:&quot;json-server&quot;,&quot;author&quot;:&quot;typicode&quot;}
 
-10:49:06.574 response time in milliseconds: 2088
+23:05:16.088 response time in milliseconds: 2067
 1 &lt; 201
 1 &lt; X-Powered-By: Express
 1 &lt; Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
@@ -2118,18 +2122,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: -1
 1 &lt; Access-Control-Expose-Headers: Location
-1 &lt; Location: http://localhost:3000/posts/10
+1 &lt; Location: http://localhost:3000/posts/6
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Content-Length: 64
-1 &lt; ETag: W/&quot;40-//Af6zboFVrD4VDY79fPTcVOiEQ&quot;
-1 &lt; Date: Thu, 06 Jul 2023 05:19:06 GMT
+1 &lt; Content-Length: 63
+1 &lt; ETag: W/&quot;3f-Ng9tpIS6dG3e4u3r5hr0E1RmBew&quot;
+1 &lt; Date: Sat, 03 Jun 2023 17:35:16 GMT
 1 &lt; Connection: keep-alive
 1 &lt; Keep-Alive: timeout=5
 {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 10
+  &quot;id&quot;: 6
 }
 
 </div>   
@@ -2186,7 +2190,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2195,10 +2199,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.90">10:49:06.592 [print] response is: {
+  <div class="preformatted" data-parent="0.90">23:05:16.094 [print] response is: {
   &quot;title&quot;: &quot;json-server&quot;,
   &quot;author&quot;: &quot;typicode&quot;,
-  &quot;id&quot;: 10
+  &quot;id&quot;: 6
 }
  
 </div>   
@@ -2227,7 +2231,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>def postId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2297,7 +2301,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path postId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2332,7 +2336,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">2096</div>
+    <div class="time-cell passed">2080</div>
   </div>
 
    
@@ -2341,15 +2345,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.98">10:49:06.635 request:
-2 &gt; DELETE http://localhost:3000/posts/10
+  <div class="preformatted" data-parent="0.98">23:05:16.104 request:
+2 &gt; DELETE http://localhost:3000/posts/6
 2 &gt; Host: localhost:3000
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-10:49:08.719 response time in milliseconds: 2079
+23:05:18.177 response time in milliseconds: 2070
 2 &lt; 200
 2 &lt; X-Powered-By: Express
 2 &lt; Vary: Origin, Accept-Encoding
@@ -2361,7 +2365,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; Content-Type: application/json; charset=utf-8
 2 &lt; Content-Length: 2
 2 &lt; ETag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
-2 &lt; Date: Thu, 06 Jul 2023 05:19:08 GMT
+2 &lt; Date: Sat, 03 Jun 2023 17:35:18 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Keep-Alive: timeout=5
 {}
@@ -2420,7 +2424,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;response is:&#39;, response</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2429,7 +2433,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.101">10:49:08.731 [print] response is: {
+  <div class="preformatted" data-parent="0.101">23:05:18.182 [print] response is: {
 }
  
 </div>   
@@ -2451,7 +2455,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>assert responseTime &lt; 3000</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    

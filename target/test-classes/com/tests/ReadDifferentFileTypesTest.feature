@@ -31,5 +31,6 @@ Feature: Read different file types using read function in karate
     #Given request payload
     #Above two lines can be simplified in to a single line given below
     Given request read('classpath:testdata/create_post_testdata.yaml')
-    When method post Then status 201
+    When method post 
+    Then status 201
     Then match $ == {title: "json-server",author: "typicode",id: #notnull}

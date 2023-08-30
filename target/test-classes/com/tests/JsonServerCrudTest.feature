@@ -1,7 +1,10 @@
 Feature: Json server crud test
 
   Background: api end point url
-    * url 'http://localhost:3000/posts'
+    #* url 'http://localhost:3000/posts'
+    #baseUrl value is coming from karate-config.js file added under class path.These variable values
+    #added under this config file can be used across feature files in the project.
+    * url baseUrl
 
   Scenario: create a new post
     #Given url 'http://localhost:3000/posts'

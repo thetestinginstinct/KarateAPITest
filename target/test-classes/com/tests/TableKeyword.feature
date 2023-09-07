@@ -25,6 +25,7 @@ Feature: table keyword demo data driven testing feature
     #payload data will be provided from TableKeyword.feature file under com.tests package
     #embedded expressions is used to pass payload with request keyword
     Given request {"title": '#(title)',"author": '#(author)'}
-    When method post Then status 201
+    When method post 
+    Then status 201
     #embedded expressions can also be used with match keyword for assertion
     Then match $ == {title: '#(title)',author: '#(author)',id: #notnull}

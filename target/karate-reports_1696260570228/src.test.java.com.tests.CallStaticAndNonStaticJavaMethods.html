@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"432858be-8b39-494f-a27d-fb96e205bab2",karate_version:"1.4.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>src.test.java.com.tests.CallStaticAndNonStaticJavaMethods</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">4</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2023-10-02 08:57:35 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Call Static Java Method</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:8]"><span>[2:8]</span> <span>Call Static Java Method with parameter</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3:13]"><span>[3:13]</span> <span>Call Non Static Java Method</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[4:19]"><span>[4:19]</span> <span>Call Non Static Java Method with parameter</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Call Static &amp; NonStatic Java Methods Feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Call Static Java Method</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>39</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;com.tests.Utility&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:57:35.222 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref failed">5</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def result = JavaDemo.generateFullName()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">20:57:35.356 src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:5
+* def result = JavaDemo.generateFullName()
+js failed:
+&gt;&gt;&gt;&gt;
+01: JavaDemo.generateFullName()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: net/datafaker/Faker has been compiled by a more recent version of the Java Runtime (class file version 61.0), this version of the Java Runtime only recognizes class file versions up to 59.0
+- java.base/java.lang.ClassLoader.defineClass1(Native Method)
+- java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+- java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:151)
+- java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:825)
+- java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:723)
+- java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:646)
+- java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:604)
+
+src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:5
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref skipped">6</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;result is&#39;, result</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:8]</span>
+                <span class="scenario-name">Call Static Java Method with parameter</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;com.tests.Utility&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">20:57:35.379 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref failed">10</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def result = JavaDemo.generateFullNameWithParameter(&#39;Griffin&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:57:35.387 src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:10
+* def result = JavaDemo.generateFullNameWithParameter(&#39;Griffin&#39;)
+js failed:
+&gt;&gt;&gt;&gt;
+01: JavaDemo.generateFullNameWithParameter(&#39;Griffin&#39;)
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: Could not initialize class com.tests.Utility
+- java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+- java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1155)
+- java.base/java.lang.invoke.DirectMethodHandle$EnsureInitialized.computeValue(DirectMethodHandle.java:376)
+- java.base/java.lang.invoke.DirectMethodHandle$EnsureInitialized.computeValue(DirectMethodHandle.java:373)
+- java.base/java.lang.ClassValue.getFromHashMap(ClassValue.java:228)
+- java.base/java.lang.ClassValue.getFromBackup(ClassValue.java:210)
+- java.base/java.lang.ClassValue.get(ClassValue.java:116)
+
+src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:10
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;result is&#39;, result</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:13]</span>
+                <span class="scenario-name">Call Non Static Java Method</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>14</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;com.tests.Utility&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">20:57:35.399 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref failed">15</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def obj1 = new JavaDemo()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">20:57:35.420 src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:15
+* def obj1 = new JavaDemo()
+js failed:
+&gt;&gt;&gt;&gt;
+01: new JavaDemo()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: Could not initialize class com.tests.Utility
+- java.base/jdk.internal.misc.Unsafe.allocateInstance(Native Method)
+- java.base/java.lang.invoke.DirectMethodHandle.allocateInstance(DirectMethodHandle.java:518)
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:15
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def result = obj1.generateEmailAddress()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;result is&#39;, result</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:19]</span>
+                <span class="scenario-name">Call Non Static Java Method with parameter</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>3</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def JavaDemo = Java.type(&#39;com.tests.Utility&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">20:57:35.436 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref failed">21</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>def obj1 = new JavaDemo()</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">20:57:35.444 src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:21
+* def obj1 = new JavaDemo()
+js failed:
+&gt;&gt;&gt;&gt;
+01: new JavaDemo()
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: Could not initialize class com.tests.Utility
+- java.base/jdk.internal.misc.Unsafe.allocateInstance(Native Method)
+- java.base/java.lang.invoke.DirectMethodHandle.allocateInstance(DirectMethodHandle.java:518)
+- &lt;js&gt;.:program(Unnamed:1)
+
+src/test/java/com/tests/CallStaticAndNonStaticJavaMethods.feature:21
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref skipped">22</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def result = obj1.generateEmailAddressWithParameter(&#39;Griffin&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;result is&#39;, result</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

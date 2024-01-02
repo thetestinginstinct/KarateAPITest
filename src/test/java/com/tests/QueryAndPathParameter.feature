@@ -1,5 +1,8 @@
 Feature: query and path parameter Feature
 
+  Background: 
+    * configure ssl = true
+
   Scenario: query parameter
     Given url 'https://reqres.in/api/users'
     And param page = '2'

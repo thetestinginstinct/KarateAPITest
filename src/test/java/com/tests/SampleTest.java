@@ -4,10 +4,10 @@ import com.intuit.karate.junit5.Karate;
 
 class SampleTest {
 
-	@Karate.Test
-	Karate testSpecificFeature() {
-		return Karate.run("Tags").relativeTo(getClass());
-	}
+//	@Karate.Test
+//	Karate testSpecificFeature() {
+//		return Karate.run("Tags").relativeTo(getClass());
+//	}
 	
 //	@Karate.Test
 //	Karate testTags() {
@@ -24,5 +24,11 @@ class SampleTest {
 //		return Karate.run("Tags").tags("@regression,@smoke","~@sanity").relativeTo(getClass());
 //
 //	}
-
+	@Karate.Test
+    Karate testEnvironmentSwitching() {
+		return Karate.run("EnvironmentSwitching")
+//				uncomment the below line to switch environment value
+//				.karateEnv("stage")
+				.relativeTo(getClass());
+    }
 }

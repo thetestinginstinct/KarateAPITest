@@ -24,11 +24,18 @@ class SampleTest {
 //		return Karate.run("Tags").tags("@regression,@smoke","~@sanity").relativeTo(getClass());
 //
 //	}
-	@Karate.Test
-    Karate testEnvironmentSwitching() {
-		return Karate.run("EnvironmentSwitching")
+//	@Karate.Test
+//    Karate testEnvironmentSwitching() {
+//		return Karate.run("EnvironmentSwitching")
 //				uncomment the below line to switch environment value
 //				.karateEnv("stage")
+//				.relativeTo(getClass());
+//    }
+	@Karate.Test
+    Karate testDryRun() {
+		return Karate.run("DryRun")
+//				uncomment the below line to use dry run
+//				.dryRun(true)
 				.relativeTo(getClass());
     }
 }

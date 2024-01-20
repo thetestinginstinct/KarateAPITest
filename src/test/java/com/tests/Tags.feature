@@ -8,7 +8,7 @@ Feature: Tags feature
     When method post
     Then status 201
     * match response.name == "morpheus"
-    * match response.job == "leader"
+    * match response.job == "leaders"
     * print 'Tags feature:@smoke @regression, method post'
 
   @sanity

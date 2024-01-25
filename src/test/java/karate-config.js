@@ -21,5 +21,8 @@ function fn() {
   karate.configure('connectTimeout', 5000);
   karate.configure('readTimeout', 5000);
   karate.configure('continueOnStepFailure', false);
+//karate.configure('charset', null);
+ //karate.configure('headers',{ Accept: 'application/json'});
+ //karate.configure('headers',{ Accept: 'application/json', 'Content-Type': 'application/xml'});
   return config;
 }

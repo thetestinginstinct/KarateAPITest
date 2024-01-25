@@ -27,11 +27,16 @@
 			<version>${faker.version}</version>
 		</dependency>
 		<dependency>
-    <groupId>net.masterthought</groupId>
-    <artifactId>cucumber-reporting</artifactId>
-    <version>5.3.1</version>
-    <scope>test</scope>
-</dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.3.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.11</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<testResources>

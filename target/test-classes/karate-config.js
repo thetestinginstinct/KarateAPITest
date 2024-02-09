@@ -24,5 +24,6 @@ function fn() {
 //karate.configure('charset', null);
  //karate.configure('headers',{ Accept: 'application/json'});
  //karate.configure('headers',{ Accept: 'application/json', 'Content-Type': 'application/xml'});
+ karate.configure('retry',{ count:6, interval:2000});
   return config;
 }

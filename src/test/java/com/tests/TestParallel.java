@@ -20,7 +20,7 @@ public class TestParallel {
 	
 	@Test
 	void testParallel() {
-		Results results = Runner.path("classpath:com/tests/Tags.feature")
+		Results results = Runner.path("classpath:com/tests/DDTUsingScenarioOutline.feature")
 				// uncomment the below line to use tags
 				// .tags("smoke")
 				// uncomment the below line to switch environment value
@@ -29,7 +29,7 @@ public class TestParallel {
 				// .dryRun(true)
 				// uncomment the below line to enable cucumber html report
 				.outputCucumberJson(true)
-				.parallel(4);
+				.parallel(5);
 		        // uncomment the below line to generate cucumber html report
 		        generateReport(results.getReportDir());
 		        assertEquals(0, results.getFailCount(), results.getErrorMessages());

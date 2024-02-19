@@ -1,0 +1,31 @@
+[ {
+  "email" : null,
+  "password" : null,
+  "errorResponse" : {
+    "error" : "Missing email or username"
+  }
+}, {
+  "email" : true,
+  "password" : false,
+  "errorResponse" : {
+    "error" : "Missing password"
+  }
+}, {
+  "email" : "",
+  "password" : "",
+  "errorResponse" : {
+    "error" : "Missing email or username"
+  }
+}, {
+  "email" : "test123@gmail.com",
+  "password" : "",
+  "errorResponse" : {
+    "error" : "Missing password"
+  }
+}, {
+  "email" : "",
+  "password" : "password",
+  "errorResponse" : {
+    "error" : "Missing email or username"
+  }
+} ]

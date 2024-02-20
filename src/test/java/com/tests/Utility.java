@@ -29,4 +29,11 @@ public class Utility {
 		String emailAddress = faker.internet().emailAddress();
 		return emailAddress + "-" + name;
 	}
+	public static String generateName(String name) {
+		return name;
+	}
+	
+	public String generateFirstName(String name) {
+		return name;
+	}
 }

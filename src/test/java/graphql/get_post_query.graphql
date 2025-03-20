@@ -1,0 +1,8 @@
+query GetCreatedPost($id: ID!) {
+  Post(id: $id) {
+    id
+    title
+    views
+    user_id
+  }
+}
